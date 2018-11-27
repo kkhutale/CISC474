@@ -66,7 +66,7 @@ var text
     mario.animations.add('walkLeft', [8, 9, 10], 10, true);
     mario.goesRight = true; 
 //display score
-  scoreText = game.add.text(0,0,'Score: 0', { font:"13px Arial", fill: "#000" })
+  scoreText = game.add.text(0,0,'score: 0', { font:"13px Arial", fill: "#000" })
   scoreText.fixedToCamera = true;
     game.camera.follow(mario);
     cursors = game.input.keyboard.createCursorKeys();
@@ -118,7 +118,7 @@ var text
   function coinCollect(mario, coin) {
     coin.kill();
     score += 10;
-    scoreText.setText('Score: '+score);
+    scoreText.setText('score: '+score);
   
   }
   
